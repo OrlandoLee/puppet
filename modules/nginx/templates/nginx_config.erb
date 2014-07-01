@@ -1,0 +1,31 @@
+worker_processes  1;
+error_log  /var/log/nginx/nginx_error.log warn;
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+    sendfile        on;
+    keepalive_timeout  65;
+
+    #gzip  on;
+    passenger_root  <%= @passenger_root%> ; #2 passenger is here
+    passenger_ruby <%= @passenger_ruby%>;#3ruby is here
+    server {
+        listen       80;
+        server_name  localhost;
+
+	    root /var/www/chuo/public;  #4 app is here
+        passenger_enabled on; #5 turn on
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+
+    }
+
+}
+
