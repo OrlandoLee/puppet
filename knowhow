@@ -1,0 +1,12 @@
+service nginx restart
+#passenger start --daemonize --port 80 --user orlando
+rails runner "Transaction.dequeue_send_email" -d &
+
+
+RAILS_ENV=production rake db:create
+RAILS_ENV=production bundle exec rake assets:precompile
+load db
+
+git clone https://OrlandoLee:Orlando620517@github.com/OrlandoLee/chuo.git
+passenger-config --ruby-command # tells you where ruby is
+passenger-config --root #tells you where passenger is
