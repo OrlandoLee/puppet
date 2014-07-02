@@ -1,5 +1,5 @@
 #!/bin/bash
- sudo yum update;
+  sudo yum update;
   sudo yum groupinstall "Development Tools";
   sudo yum install zlib-devel wget openssl-devel pcre pcre-devel make gcc gcc-c++ curl-devel;
 
