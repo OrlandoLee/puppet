@@ -19,6 +19,6 @@ class rabbitmq {
 
   exec {'install bunny gem':
   command => 'gem install bunny --version ">= 0.9.1"',
-  path => ['/usr/local/rvm/rubies/ruby-2.1.2/bin/'],
+  path => ['/usr/local/rvm/rubies/ruby-2.1.0/bin/'],
   }
 }

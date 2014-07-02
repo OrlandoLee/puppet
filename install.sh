@@ -13,10 +13,10 @@
   rvm use 2.1.0 --default
   rvm install rubygems 2.2.0
   yum install nodejs
-  gem install bundler rails
+  /usr/local/rvm/rubies/ruby-2.1.0/bin/gem install bundler rails
   sudo rpm -ivh http://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm;
   sudo yum install puppet-server;
-  sudo gem install puppet --no-ri --no-rdoc;
+  sudo /usr/local/rvm/rubies/ruby-2.1.0/bin/gem install puppet --no-ri --no-rdoc;
   hostname linode_japan_1
 
  sudo yum install mysql-server
