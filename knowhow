@@ -7,6 +7,17 @@ RAILS_ENV=production rake db:create
 RAILS_ENV=production bundle exec rake assets:precompile
 load db
 
+
+
+
+1.install.sh
+2. source /etc/profile.d/rvm.sh;
+3. papply
+4. cd /var/www && git clone https://OrlandoLee:Orlando620517@github.com/OrlandoLee/chuo.git
+5 ln -s /var/www/ /home/adep/deployfolder
+
+
+
 git clone https://OrlandoLee:Orlando620517@github.com/OrlandoLee/chuo.git
 passenger-config --ruby-command # tells you where ruby is
 passenger-config --root #tells you where passenger is
