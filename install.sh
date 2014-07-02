@@ -13,7 +13,7 @@
   rvm use 2.1.0 --default
   rvm install rubygems 2.2.0
   yum install nodejs
-  /usr/local/rvm/rubies/ruby-2.1.0/bin/gem install bundler rails
+  /usr/local/rvm/rubies/ruby-2.1.0/bin/gem install bundler rails  --no-ri --no-rdoc;
   sudo rpm -ivh http://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm;
   sudo yum install puppet-server;
   sudo /usr/local/rvm/rubies/ruby-2.1.0/bin/gem install puppet --no-ri --no-rdoc;
@@ -25,7 +25,7 @@
  sudo /usr/bin/mysql_secure_installation
  sudo chkconfig mysqld on
 
- gem install passenger
+ gem install passenger  --no-ri --no-rdoc;
  passenger-install-nginx-module
  mkdir /var/www/
  cd /var/www/
