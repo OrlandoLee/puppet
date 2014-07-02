@@ -1,4 +1,4 @@
 # User privilege specification
-       root    ALL = (ALL) ALL
-       orlando  ALL = (ALL) NOPASSWD:ALL
-       adep     ALL = (ALL) NOPASSWD: /usr/sbin/nginx, /usr/bin/git
+root    ALL = (ALL) ALL
+orlando  ALL = (ALL) NOPASSWD:ALL
+adep     ALL = (ALL) NOPASSWD: /usr/sbin/nginx#*, /usr/bin/git*
