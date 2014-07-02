@@ -1,7 +1,10 @@
-node 'Orlandos-MacBook-Pro.local' {
+node 'linode_japan_1' {
 include nginx
-#include rails
+include ssh
+include user
+include sudoers
+include rails
 #include show
 #include aclass         
-#include rabbitmq
+include rabbitmq
 }
