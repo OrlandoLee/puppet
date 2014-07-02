@@ -12,9 +12,12 @@ load db
 
 1.install.sh
 2. source /etc/profile.d/rvm.sh;
-3. papply
-4. ln -s /var/www/ /home/adep/deployfolder
-
+3. gem install puppet;
+4. papply;
+5. ln -s /var/www/ /home/adep/deployfolder
+6.
+bundle pack
+bundle install --path vendor/cache
 
 
 git clone https://OrlandoLee:Orlando620517@github.com/OrlandoLee/chuo.git
