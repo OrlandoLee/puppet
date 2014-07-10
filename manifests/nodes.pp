@@ -7,4 +7,5 @@ include rails
 #include show
 #include aclass         
 include rabbitmq
+include directory
 }
