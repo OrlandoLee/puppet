@@ -25,6 +25,7 @@
  sudo /usr/bin/mysql_secure_installation
  sudo chkconfig mysqld on
 
+ yum install ImageMagick-devel
  gem install passenger  --no-ri --no-rdoc;
  passenger-install-nginx-module
  mkdir /var/www/
