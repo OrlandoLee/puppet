@@ -30,4 +30,4 @@
  passenger-install-nginx-module
  mkdir /var/www/
  cd /var/www/
- git clone https://OrlandoLee:Orlando620517@github.com/OrlandoLee/chuo.git
+ git clone https://OrlandoLee:password@github.com/OrlandoLee/chuo.git
