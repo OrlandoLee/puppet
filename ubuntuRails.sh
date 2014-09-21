@@ -40,7 +40,4 @@ curl localhost:9200
 
 #memcached
 apt-get install libevent-dev -y 
-wget http://memcached.org/files/memcached-1.4.20.tar.gz
-tar -zxvf memcached-1.4.20.tar.gz
-cd memcached-1.4.20
-./configure && make && make test && sudo make install
+apt-get install memcached
