@@ -41,3 +41,11 @@ curl localhost:9200
 #memcached
 apt-get install libevent-dev -y 
 apt-get install memcached
+
+#redis
+apt-get install redis-server
+#redis-server /etc/redis/redis.conf
+
+
+#sphinx --mysql
+sudo apt-get install sphinxsearch
