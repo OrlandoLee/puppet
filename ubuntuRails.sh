@@ -10,7 +10,6 @@ wget http://cache.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p451.tar.gz
 tar -xvzf ruby-2.0.0-p451.tar.gz
 cd ruby-2.0.0-p451 && ./configure && make && sudo make install
 ruby -v
-apt-get install bundler -y
 #rails
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 sudo add-apt-repository -y ppa:chris-lea/node.js
