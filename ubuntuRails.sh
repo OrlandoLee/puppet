@@ -8,6 +8,12 @@ sudo apt-get -y install git-core curl zlib1g-dev build-essential libssl-dev libr
 #ruby
 wget http://cache.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p451.tar.gz
 tar -xvzf ruby-2.0.0-p451.tar.gz
+
+#I patched the file ext/readline/readline.c replacing line 1886:
+#rl_pre_input_hook = (Function *)readline_pre_input_hook;
+#With
+#rl_pre_input_hook = (rl_hook_func_t *)readline_pre_input_hook;
+
 cd ruby-2.0.0-p451 && ./configure && make && sudo make install
 ruby -v
 #rails
